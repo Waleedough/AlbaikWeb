@@ -1,0 +1,178 @@
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: verdana;
+    font-size: 300%;
+}
+
+h2 {
+    font-family: verdana;
+    color: rgb(228, 137, 0);
+}
+
+H3 {
+    color: rgb(199, 0, 0);
+    font-family: verdana;
+    font-size: 150%;
+}
+
+h4 {
+    color: rgb(199, 0, 0);
+    font-family: verdana;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-family: verdana;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    font-family: verdana;
+    font-size: 150%;
+}
+
+img {
+    margin: auto;
+    display: block;
+}
+
+
+/**********this codes for menu with animation of dot**********/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+    /*margin: 0;
+    padding: 0;*/
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navMenu {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    width: 80px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+    color: rgb(228, 137, 0);
+}
+
+.navMenu .dot {
+    width: 6px;
+    height: 6px;
+    background: rgb(228, 137, 0);
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover~.dot {
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover~.dot {
+    -webkit-transform: translateX(110px);
+    transform: translateX(110px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover~.dot {
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover~.dot {
+    -webkit-transform: translateX(285px);
+    transform: translateX(285px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+
+/* Style all font awesome icons */
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/* Add a hover effect if you want */
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+/********** Set a specific color for each brand **********/
+
+
+/* Facebook */
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 50%;
+}
+
+
+/* Twitter */
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border-radius: 50%;
+}
+
+
+/* Linkedin */
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+    border-radius: 50%;
+}
+
+
+/* Instagram */
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+    border-radius: 50%;
+}
